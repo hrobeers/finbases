@@ -1,5 +1,6 @@
 # finbases
-OpenSCAD models of existing types of fin bases.
+OpenSCAD models for different types of fin bases, to be combined with [finFoil](http://hrobeers.github.io/finFoil/) 3D exports.
+![preview.png](preview.png)
 
 ## Contribute!
 Contribute your fin bases or fin bases you know by:
