@@ -20,3 +20,6 @@ Check out [this list](https://github.com/hrobeers/finbases/labels/new%20base)
 
 #### FCS
 ![original.scad](FCS/original.png)
+
+#### US box
+![chinook.scad](USbox/chinook.png)
