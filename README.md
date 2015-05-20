@@ -10,6 +10,10 @@ Contribute your fin bases or fin bases you know by:
 
 Contact me on [twitter](https://twitter.com/finfoil) or [swaylocks](http://www.swaylocks.com/users/hans) if you're unsure how to contribute trough github.
 
+#### Contributors
+* Hans Robeers (aka. [hrobeers](https://twitter.com/hrobeers), [hans](http://www.swaylocks.com/users/hans))
+* Jim Hines (aka. [jrandy](http://www.swaylocks.com/users/jrandy))
+
 
 ## Current status
 
@@ -24,3 +28,6 @@ Check out [this list](https://github.com/hrobeers/finbases/labels/new%20base)
 
 #### US box
 ![chinook.scad](USbox/chinook.png)
+
+#### Probox
+![probox.scad](Probox/probox.png)
