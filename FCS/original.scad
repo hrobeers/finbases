@@ -35,15 +35,14 @@ module tab()
 
 module round_cut()
 {
+    translate([0,0,-tab_thick/2])
     difference()
     {
-        translate([0,0,-0.5])
         cube(size=[tab_round*1.1,
                    tab_round*1.1,
-                   tab_height+1],
+                   tab_thick*2],
              center=false);
-        translate([0,0,-0.5])
-        cylinder(h=tab_height+1,
+        cylinder(h=tab_thick*2,
                  r=tab_round,
                  center=false,
                  $fn=50);
