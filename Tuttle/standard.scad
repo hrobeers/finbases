@@ -10,6 +10,13 @@ back_angle  = 105;
 
 round_radius = 0.0045;
 
+drill_depth = 0.03;
+drill_dia   = 0.007;
+drill_dist  = 0.019;
+
+// face resolution for curved surfaces
+$fn=50;
+
 // instantiate
 tuttle();
 
@@ -28,6 +35,7 @@ module base_shape()
 {
     rotate([0,0,rot_angle()])
     translate([0,0,-thick/2])
+    difference() {
     union()
     {
         cube(size=[height(),
@@ -52,11 +60,32 @@ module base_shape()
                    thick],
              center=false);
     }
+        drill_holes();
+    }
+}
+
+module drill_holes()
+{
+    union()
+    {
+        drill_hole(drill_dist);
+        drill_hole(top_length-drill_dist);
+    }
+}
+
+module drill_hole(FrontDistance)
+{
+    translate([vert_front_h()-drill_depth,
+               FrontDistance,
+               thick/2])
+    rotate([0,90,0])
+    cylinder(h=drill_depth*1.1,
+             d=drill_dia,
+             center = false);
 }
 
 module base_cut()
 {
-    // TODO improve
     translate([-0.02,
                -back_height,
                -thick*1.1/2])
@@ -71,7 +100,7 @@ module back_cut()
     rotate([0,0,rot_angle()])
     translate([0,0,-thick/2])
 
-    translate([height(),
+    translate([height()*1.02,
                top_length,
                0])
     mirror([0,1,0])
@@ -123,8 +152,7 @@ module round_cut(Height)
              center=false);
         cylinder(h=Height*1.1,
                  r=round_radius,
-                 center=false,
-                 $fn=50);
+                 center=false);
     }
 }
 
