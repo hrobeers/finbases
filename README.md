@@ -12,7 +12,8 @@ Contact me on [twitter](https://twitter.com/finfoil) or [swaylocks](http://www.s
 
 #### Contributors
 * Hans Robeers (aka. [hrobeers](https://twitter.com/hrobeers), [hans](http://www.swaylocks.com/users/hans))
-* Jim Hines (aka. [jrandy](http://www.swaylocks.com/users/jrandy))
+* [jrandy](http://www.swaylocks.com/users/jrandy)
+* [RDM](http://www.swaylocks.com/users/rdm)
 
 
 ## Current status
@@ -24,10 +25,13 @@ Check out [this list](https://github.com/hrobeers/finbases/labels/new%20base)
 ### Finished models
 
 #### FCS
-![original.scad](FCS/original.png)
+![FCS/original.scad](FCS/original.png)
 
 #### US box
-![chinook.scad](USbox/chinook.png)
+![US/chinook.scad](US/chinook.png)
 
 #### Probox
-![probox.scad](Probox/probox.png)
+![Probox/probox.scad](Probox/probox.png)
+
+#### Tuttle box
+![Tuttle/standard.scad](Tuttle/standard.png)
