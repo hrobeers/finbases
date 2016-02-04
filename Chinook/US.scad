@@ -18,6 +18,9 @@ pin_back  = 0.009;
 // Thickness to cut for easier sliding (0 for no cut)
 thick_cut = 0.001;
 
+// face resolution for curved surfaces
+$fn=20;
+
 // instantiate
 include <chinook.scad>
 chinook();

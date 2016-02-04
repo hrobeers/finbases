@@ -15,7 +15,7 @@ drill_dia   = 0.007;
 drill_dist  = 0.019;
 
 // face resolution for curved surfaces
-$fn=50;
+$fn=20;
 
 // instantiate
 tuttle();

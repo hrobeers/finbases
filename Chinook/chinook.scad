@@ -34,8 +34,7 @@ module tab_cut()
         translate([tab_round,tab_length,0])
         cylinder(h=thick*1.1,
                  r=tab_round,
-                 center=false,
-                 $fn=50);
+                 center=false);
     }
 }
 
@@ -45,8 +44,7 @@ module screw_cut()
     rotate([0,90,0])
     cylinder(h=tab_height*1.1,
              d=screw_dia,
-             center=true,
-             $fn=50);
+             center=true);
 }
 
 module back_round_cut(BaseLength)
@@ -62,8 +60,7 @@ module back_round_cut(BaseLength)
              center=false);
         cylinder(h=thick*1.2,
                  r=tab_round,
-                 center=false,
-                 $fn=50);
+                 center=false);
     }
 }
 
@@ -75,8 +72,7 @@ module pin_cut(BaseLength)
     rotate([0,0,0])
     cylinder(h=tab_height*1.1,
              d=pin_dia,
-             center=true,
-             $fn=50);
+             center=true);
 }
 
 module thickness_cut(BaseLength, zOffset)

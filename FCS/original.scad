@@ -5,6 +5,9 @@ tab_thick  = 0.006;
 tab_space  = 0.053;
 tab_round  = 0.002;
 
+// face resolution for curved surfaces
+$fn=20;
+
 // first tab
 tab();
 // second tab
@@ -44,7 +47,6 @@ module round_cut()
              center=false);
         cylinder(h=tab_thick*2,
                  r=tab_round,
-                 center=false,
-                 $fn=50);
+                 center=false);
     }
 }
