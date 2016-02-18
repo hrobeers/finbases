@@ -118,6 +118,7 @@ module front_cut()
     rounding_cuts();
 }
 
+use <../lib/round_cut.scad>
 module rounding_cuts()
 {
     union()
@@ -126,33 +127,19 @@ module rounding_cuts()
                    front_height*1.05,
                    thick-round_radius])
         rotate([90,-90,0])
-        round_cut(front_height);
+        round_cut(round_radius, front_height);
 
         translate([round_radius,
                    front_height*1.05,
                    round_radius])
         rotate([90,180,0])
-        round_cut(front_height);
+        round_cut(round_radius, front_height);
 
         translate([round_radius,
                    round_radius/1.1,
                    0])
         rotate([0,0,180])
-        round_cut(thick);
-    }
-}
-
-module round_cut(Height)
-{
-    difference()
-    {
-        cube(size=[round_radius*1.1,
-                   round_radius*1.1,
-                   Height*1.1],
-             center=false);
-        cylinder(h=Height*1.1,
-                 r=round_radius,
-                 center=false);
+        round_cut(round_radius, thick);
     }
 }
 
