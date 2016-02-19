@@ -2,6 +2,7 @@
 length = 0.16;
 height = 0.025;
 thick  = 0.0092;
+mirror_vec = [0,0,0];
 
 screw_pos = 0.0096;
 screw_dia = 0.0045;
@@ -23,4 +24,6 @@ $fn=20;
 
 // instantiate
 include <chinook.scad>
-chinook();
+finfit(length, mirror_vec);
+
+// finfit implemented in chinook.scad

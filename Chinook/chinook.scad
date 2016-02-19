@@ -1,4 +1,4 @@
-module chinook()
+module chinook(length)
 {
     difference()
     {
@@ -10,6 +10,15 @@ module chinook()
         thickness_cut(length, thick/2);
         thickness_cut(length, -thick/2);
     }
+}
+
+module finfit(base_length, mirror_vec)
+{
+    front_offset = tab_length;
+    length = base_length + tab_length;
+    mirror(mirror_vec)
+    translate([0,-front_offset, 0])
+    chinook(length);
 }
 
 module base_cube(BaseLength)
