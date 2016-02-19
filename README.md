@@ -32,7 +32,7 @@ Check out [this list](https://github.com/hrobeers/finbases/labels/new%20base)
 ![FCS/original.scad](FCS/original.png)
 
 #### US box
-![US/chinook.scad](US/chinook.png)
+![US/chinook.scad](Chinook/chinook.png)
 
 #### Probox
 ![Probox/probox.scad](Probox/probox.png)
