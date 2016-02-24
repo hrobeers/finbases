@@ -1,6 +1,6 @@
 # finbases
 OpenSCAD models for different types of fin bases, to be combined with [finFoil](http://hrobeers.github.io/finFoil/) 3D exports.
-![preview.png](preview.png)
+![preview.png](img/preview.png)
 
 ##LICENSE
 
@@ -29,13 +29,13 @@ Check out [this list](https://github.com/hrobeers/finbases/labels/new%20base)
 ### Finished models
 
 #### FCS
-![FCS/original.scad](FCS/original.png)
+![fcs.scad](img/fcs.png)
 
 #### US box
-![US/chinook.scad](Chinook/chinook.png)
+![chinook.scad](img/chinook.png)
 
 #### Probox
-![Probox/probox.scad](Probox/probox.png)
+![probox.scad](img/probox.png)
 
 #### Tuttle box
-![Tuttle/standard.scad](Tuttle/standard.png)
+![tuttle.scad](img/tuttle.png)
